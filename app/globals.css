@@ -2,26 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.todoInput {
+    @apply outline-none border-b-2 border-b-gray-500
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.btnPrimary {
+    @apply bg-blue-500 text-white py-2 px-4 rounded
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.todoBtn{
+    @apply border rounded-2xl p-1
+}
+
+.todoLabel{
+@apply absolute block bottom-20 text-gray-500 pointer-events-none transition-all duration-200 md:bottom-8 md:left-0
+}
+
+.todoInput{
+@apply placeholder:text-transparent
+}
+
+.todoInput:placeholder-shown+.todoLabel {
+    @apply bottom-12 left-0 text-2xl md:bottom-1
 }
