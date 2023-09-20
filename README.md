@@ -1,3 +1,6 @@
+## env.local
+create env.local in th root of the project and store your MongoDb Connection String with name MONGODB_CONNECTION
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
